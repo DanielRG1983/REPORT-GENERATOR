@@ -1,70 +1,84 @@
-# REPORT-GENERATOR
+# 🛡️ **DRG_REPORT_GENERATOR_V7** – Gerador Avançado de Relatórios de Chat
 
-## 🙋 Sobre o Desenvolvedor:
+---
 
-- DANIEL RODRIGUES GUIMARÃES.
-- Agente de Polícia Civil do Estado do Piauí.
+## 🙋 Sobre o Desenvolvedor
+
+- **Daniel Rodrigues Guimarães**
+- Agente de Polícia Civil do Estado do Piauí
 - Bacharel em Ciência da Computação
-- Pós Graduado em Perícia Cibernética
-- Pós Graduado em Engenharia de Software
-- Para apoiar este projeto, considere fazer uma doação através da chave pix do desenvolvedor:
-##                 danielrg.apc@gmail.com
+- Pós-graduado em Perícia Cibernética
+- Pós-graduado em Engenharia de Software
 
-# 📝 DRG_REPORT_GENERATOR_V7 – Gerador Avançado de Relatórios de Chat
-
-
-Aplicação desenvolvida por **DanielRG – PCPI** para **geração automática de relatórios profissionais** com base em arquivos de chat (formato `.txt`) e anexos (imagens, vídeos, áudios, PDFs e transcrições).  
-Ideal para uso investigativo, técnico ou documental.
+📧 **Contato/PIX**: danielrg.apc@gmail.com
 
 ---
 
-## ✅ Funcionalidades:
+## 📝 **Descrição da Aplicação**
 
-- 📂 Leitura automatizada de arquivos `.txt` exportados de conversas (com suporte a **WhatsApp** em português e inglês)
-- 📎 Reconhecimento e inserção de **anexos** (fotos, vídeos, áudios, PDFs, imagens `.webp`)
-- 🧠 Detecção e inserção de **transcrições automáticas** associadas aos anexos `.opus`, `.mp4`, `.avi`, etc.
-- 📊 **Três formatos de relatório** disponíveis:
-  - **Com tabela:** estrutura organizada e formal
-  - **Sem tabela:** texto corrido e limpo
-  - **Estilo WhatsApp:** mensagens destacadas com cores diferentes para o **(Proprietário)** e os demais participantes
-- 📝 Suporte aos formatos de saída:
-  - **DOCX (Microsoft Word)**
-  - **WPS (WPS Office)** *(inclui conversão automática a partir do DOCX)*
-- 📅 Inclusão de metadados da conversa: hora de início, última atividade, e lista de participantes
-- 💡 Interface gráfica amigável desenvolvida com `Tkinter`
-- 🔄 Indicação visual de progresso via mensagem piscante durante a geração
-- 💙 Tela de manual integrada com instruções completas
-- 📧 Email clicável com cópia automática para clipboard
-- 💰 QR Code para **doações via PIX** ao desenvolvedor
+Ferramenta desenvolvida especialmente para **análise técnica e investigação policial**, permitindo a **geração automática de relatórios** profissionais com base em **exportações do Cellebrite** e outros formatos de chat (TXT), com suporte completo a **anexos multimídia**.
 
 ---
 
-## 🔧 Requisitos:
+## ✅ **Principais Funcionalidades**
+
+- 📂 Leitura de arquivos `.txt` de conversas extraídos do Cellebrite
+  - Suporte tanto a marcações em **português** quanto em **inglês**
+- 🧍 Identificação e exibição dos **participantes da conversa**
+- 🕓 Inclusão de **timestamp** de cada mensagem
+- 📎 Inserção de **anexos multimídia**, incluindo:
+  - Imagens (.jpg, .jpeg, .png, .webp)
+  - Vídeos (.mp4, .avi, .mov) com geração de miniatura
+  - PDFs (inserção da 1ª página como imagem)
+  - Áudios (.opus), com leitura automática das **transcrições** `.txt`
+- 🧠 Detecção automática de transcrições e associação correta aos anexos
+- 🧾 Três **formatos de relatório** disponíveis:
+  - **Com tabela:** organização formal e estruturada
+  - **Sem tabela:** estilo de redação mais livre e fluido
+  - **Estilo WhatsApp:** (caso implementado) com diferenciação visual entre participantes
+- 💼 Saída nos formatos:
+  - `.docx` (compatível com Microsoft Word)
+  - `.wps` (compatível com WPS Office – gerado a partir do `.docx`)
+- 🖥️ Interface gráfica com **Tkinter**:
+  - Simples, funcional e intuitiva
+  - Seleção de formato e modelo de relatório
+  - Barra de progresso com porcentagem
+
+---
+
+## ⚙️ **Requisitos Técnicos**
 
 - **Sistema Operacional:** Windows
-- **ffmpeg.exe** na mesma pasta da aplicação (necessário para gerar thumbnails de vídeos)
-- Para gerar `.wps`: necessário ter **WPS Office** instalado no sistema
+- **ffmpeg.exe** na mesma pasta da aplicação (usado para extrair thumbnails de vídeos)
+- **WPS Office** instalado, caso deseje gerar `.wps`
 
 ---
+IMPORTANTE:
 
-## 🚀 Como usar:
+## Desative o antivírus ou crie uma exceção para a aplicação;
 
-1. **Abra o programa executável**
-2. Selecione o arquivo `.txt` exportado do chat
-3. Selecione a **pasta de anexos** correspondente (imagens, vídeos, transcrições .txt)
-4. Escolha o **modelo de relatório** desejado (tabela, texto ou WhatsApp)
-5. Escolha o **formato final** (DOCX ou WPS)
+## Execute o aplicativo como administrador.
+
+## 🚀 **Como Usar**
+
+1. Inicie o programa executável
+2. Selecione o arquivo `.txt` exportado do Cellebrite
+3. Selecione a pasta contendo os anexos
+4. Escolha o **tipo de relatório** (com ou sem tabela)
+5. Escolha o **formato do arquivo final** (`.docx` ou `.wps`)
 6. Clique em **Executar**
-7. Defina o nome do arquivo e local de salvamento
-8. Aguarde a mensagem "Processo concluído com sucesso!"
+7. Escolha o local para salvar o arquivo
+8. Aguarde a mensagem de confirmação
 
 ---
 
-## 📦 Observações:
+## 🔒 **Considerações Finais**
 
-- O código está pronto para ser empacotado com PyInstaller.
-- O antivírus pode bloquear o `.exe`; recomendo adicionar exceção ou executar como administrador.
-- O programa suporta textos com marcações em **português ou inglês**, e identifica automaticamente o idioma base.
+- O programa não depende do **Microsoft Office** instalado
+- A conversão para `.wps` é feita via **CLI do WPS Office**
+- Pode ser empacotado via **PyInstaller** para distribuição como `.exe`
+- Funcionalidade robusta para uso forense e documental, com foco na **fidelidade das mensagens e anexos**
 
 ---
 
+Se quiser, posso gerar esse conteúdo em `.docx` ou `.pdf` formatado. Deseja isso também?
