@@ -81,4 +81,4 @@ IMPORTANTE:
 
 ---
 
-Se quiser, posso gerar esse conteúdo em `.docx` ou `.pdf` formatado. Deseja isso também?
+
