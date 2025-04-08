@@ -2,13 +2,13 @@
 
 ## 🙋 Sobre o Desenvolvedor:
 
-DANIEL RODRIGUES GUIMARÃES
-Agente de Polícia Civil do Estado do Piauí
-Bacharel em Ciência da Computação
-Pós Graduado em Perícia Cibernética
-Pós Graduado em Engenharia de Software
-Para apoiar este projeto, considere fazer uma doação através da chave pix do desenvolvedor:
-danielrg.apc@gmail.com
+- DANIEL RODRIGUES GUIMARÃES.
+- Agente de Polícia Civil do Estado do Piauí.
+- Bacharel em Ciência da Computação
+- Pós Graduado em Perícia Cibernética
+- Pós Graduado em Engenharia de Software
+- Para apoiar este projeto, considere fazer uma doação através da chave pix do desenvolvedor:
+##                 danielrg.apc@gmail.com
 
 # 📝 DRG_REPORT_GENERATOR_V7 – Gerador Avançado de Relatórios de Chat
 
